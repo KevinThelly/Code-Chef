@@ -36,7 +36,6 @@ int main() {
     a=(c*100)/d;
     if(a>=75){
       cout<<0<<endl;
-      //if 0
     }
     else {
       int f=attendance(d,s,c);
