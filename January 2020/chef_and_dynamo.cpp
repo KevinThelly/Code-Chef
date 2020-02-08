@@ -10,41 +10,43 @@ long unsigned int maximum(int n){
   return sum;
 }
 
-long unsigned int minimum(int n){
-  long unsigned int sum=10;
-  if(n==1){
-    return 1;
-  }
+// long unsigned int minimum(int n){
+//   long unsigned int sum=10;
+//   if(n==1){
+//     return 1;
+//   }
 
-  else{
-    while(n>2){
-      sum=sum*10;
-      n--;
-    }
-  }
+//   else{
+//     while(n>2){
+//       sum=sum*10;
+//       n--;
+//     }
+//   }
 
-  return sum;
-}
+//   return sum;
+// }
 
 int main() {
   int t;
   cin>>t;
+
   for(int i=0;i<t;i++){
+
     long unsigned int a,b,c,s;
     int n,val;
     cin>>n>>a;
-    s = a + 2*maximum(n) + 2*minimum(n) ;
+    s = a + 2*maximum(n) + 2 ;
+
     cout<<s<<endl;
     cin>>b;
-    c = maximum(n) + minimum(n) - b ;
+    
+    c = maximum(n) + 1 - b ;
     cout<<c<<endl;
     cin>>b;
-    c = maximum(n) + minimum(n) - b ;
+    c = maximum(n) + 1 - b ;
     cout<<c<<endl;
     cin>>val;
-    if(val==-1){
-      return 0;
-    }
-  }
 
+  }
+  
 }
